@@ -54,7 +54,7 @@
                 <label for="yCoordinate">vertical Coordinate System</label>
                 <input type="text" name="yCoordinate" id="yCoordinate">
 
-                <label for="attribute">Included Attributes</label>
+                <h2>Included Attributes</h2>
                 <div class="checkboxCont">
                     <div class="checkbox">
                         <label for="">X Positions</label>
@@ -91,7 +91,70 @@
                         <input type="checkbox" name="" id="">
                     </div>
                 </div>
+               <h2>Minimum & Maximum Attributes(min, max)</h2>
+               <div class="formGrid">
+                <div class="left">
+                    <label for="">XYZ Position</label>
+                    <input type="text" name="" id="">
+                    <label for="">Return Number</label>
+                    <input type="text" name="" id="">
+                    <label for="">Scan Direction Flag</label>
+                    <input type="text" name="" id="">
+                    <label for="">Classification</label>
+                    <input type="text" name="" id="">
+                    <label for="">User Data</label>
+                    <input type="text" name="" id="">
+                    <label for="">GPS Time</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div class="right">
+                    <label for="">Intensity</label>
+                    <input type="text" name="" id="">
+                    <label for="">Number of Returns</label>
+                    <input type="text" name="" id="">
+                    <label for="">Edge of Flight Line</label>
+                    <input type="text" name="" id="">
+                    <label for="">Scan Angle Rank</label>
+                    <input type="text" name="" id="">
+                    <label for="">Point Source ID</label>
+                    <input type="text" name="" id="">
+                    <label for="">RGB Colors</label>
+                    <input type="text" name="" id="">
+                </div>
+               </div>
+
+               <label for="dataPeriod">Data Collection Period</label>
+               <input type="date" name="" id=""> <input type="date" name="" id="">
+
+               <label for="publicationDate">Data Publication Date</label>
+               <input type="date" name="" id="">
+
+               <h2>Data Providers</h2>
+               <div class="provider">
+                <label for="funders">Funders</label>
+                <input type="text" name="" id="funders">
+                <label for="partner">Partners</label>
+                <input type="text" name="" id="">
+
+                <label for="collector">Collectors</label>
+                <input type="text" name="" id="collector">
+               </div>
+
+               <label for="ack">Data Acknowledgment</label>
+               <textarea name="" id="ack" cols="30" rows="10"></textarea>
+
+               <label for="citation">Data Citation</label>
+               <textarea name="" id="citation" cols="30" rows="10"></textarea>
+
+               <label for="license">License of Data</label>
+                <select name="license" id="licecnse">
+                    <option value="">Choose a suitable license for your data</option>
+                   
+                </select>
                
+                <label for="add">Additional Files</label>
+                <input type="text" name="" id="" placeholder="CCID of the file on Pinata"> <input type="text" name="label" id="" placeholder="Name tour file"> <input class="numb" type="text" name="" placeholder="Choose a tag"> <i></i>
+                <input type="submit">
             </form>
         </div>
     </main>
