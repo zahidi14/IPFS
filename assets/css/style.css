@@ -125,6 +125,40 @@ input {
 form {
   margin-top: 50px;
 }
+form .inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+form .inline .date {
+  width: 186px;
+  color: #919191;
+}
+form .inline .pub {
+  width: 405px;
+}
+form .inline span {
+  margin: 0 17px;
+}
+form .inline .short {
+  width: 128px;
+  height: 37px;
+}
+form .inline .medium {
+  width: 107px;
+}
+form .inline .long {
+  width: 207px;
+}
+form .inline .box {
+  border: solid 1px #E1E1E1;
+  border-radius: 3px;
+  width: 37px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 form input, form label {
   display: block;
 }
@@ -139,44 +173,42 @@ form input {
 form .large {
   height: 154px;
 }
-form .radioGroup {
-  float: left;
-  margin: 0 5px 0 0;
-  width: 100px;
-  height: 40px;
-  position: relative;
+form h2 {
+  margin-top: 25px;
+  text-decoration: underline;
 }
-form .radioGroup label, form .radioGroup input {
+form .checkboxCont {
+  display: flex;
+}
+form .checkboxCont label {
+  color: #919191;
+}
+form .checkboxCont .checkbox {
+  margin-top: 17px;
   display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  list-style: none;
 }
-form .radioGroup input[type=radio] {
-  opacity: 0.011;
-  z-index: 100;
+form .checkboxCont .checkbox li {
+  margin-top: 10px;
+  margin-right: 48px;
 }
-form .radioGroup input[type=radio]:checked + label {
-  background: #20b8be;
-  border-radius: 4px;
+form .checkboxCont .checkbox input[type=checkbox] {
+  width: 19px;
+  height: 19px;
 }
-form .radioGroup label {
-  cursor: pointer;
-  z-index: 90;
-  line-height: 1.8em;
+form .checkboxCont .checkbox input, form .checkboxCont .checkbox label {
+  display: inline-block;
+  margin-top: 0px;
 }
-form .button .button input[type=radio] {
-  opacity: 0.011;
-  z-index: 100;
+form .formGrid {
+  display: flex;
 }
-form .button input[type=radio]:checked + label {
-  background: #20b8be;
-  border-radius: 4px;
+form .formGrid label {
+  color: #919191;
 }
-form .button label {
-  cursor: pointer;
-  z-index: 90;
-  line-height: 1.8em;
+form .formGrid .half {
+  width: 337px;
+}
+form .formGrid .left {
+  margin-right: 14px;
 }/*# sourceMappingURL=style.css.map */

@@ -143,6 +143,41 @@ input{
 // ### Data Contribution Page ###
 
 form{
+    .inline{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        .date{
+            width: 186px;
+            color: $secondaryCol;
+            
+        }
+        .pub{
+            width: 405px;
+        }
+        span{
+            margin: 0 17px;
+        }
+        .short{
+            width: 128px;
+            height: 37px;
+        }
+        .medium{
+            width: 107px;
+        }
+        .long{
+            width: 207px;
+        }
+        .box{
+            border: solid 1px $border;
+            border-radius: 3px;
+            width: 37px;
+            height: 37px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
     margin-top: 50px;
     input,label{
         display: block;
@@ -160,53 +195,79 @@ form{
     .large{
         height: 154px;
     }
-    .radioGroup{
-        float: left;
-        margin: 0 5px 0 0;
-        width: 100px;
-        height: 40px;
-        position: relative;
+    // .radioGroup{
+    //     float: left;
+    //     margin: 0 5px 0 0;
+    //     width: 100px;
+    //     height: 40px;
+    //     position: relative;
         
-        label, input {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-      }
-      input[type="radio"] {
-        opacity: 0.011;
-        z-index: 100;
-      }
-      input[type="radio"]:checked + label {
-        background: #20b8be;
-        border-radius: 4px;
-      }
-      label {
-        cursor: pointer;
-        z-index: 90;
-        line-height: 1.8em;
-      }
+    //     label, input {
+    //     display: block;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //   }
+    //   input[type="radio"] {
+    //     opacity: 0.011;
+    //     z-index: 100;
+    //   }
+    //   input[type="radio"]:checked + label {
+    //     background: #20b8be;
+    //     border-radius: 4px;
+    //   }
+    //   label {
+    //     cursor: pointer;
+    //     z-index: 90;
+    //     line-height: 1.8em;
+    //   }
       
+    // }
+    
+    
+    h2{
+        margin-top: 25px;
+        text-decoration: underline ;
     }
-      
-      .button 
-      
-      .button input[type="radio"] {
-        opacity: 0.011;
-        z-index: 100;
-      }
-      
-      .button input[type="radio"]:checked + label {
-        background: #20b8be;
-        border-radius: 4px;
-      }
-      
-      .button label {
-        cursor: pointer;
-        z-index: 90;
-        line-height: 1.8em;
-      }
+   .checkboxCont{
+    display: flex;
+    label{
+        color: $secondaryCol;
+    }
+    .checkbox{
+        margin-top: 17px;
+        display: block;
+        list-style: none;
+        li{
+            margin-top: 10px;
+            margin-right: 48px;
+        }
+        input[type=checkbox]{
+            width:19px;
+            height: 19px;
+           
+        }
+        input, label{
+            display: inline-block;
+            margin-top: 0px;
+        }
+       
+    }
+   }
+
+   .formGrid{
+    display: flex;
+    label{
+        color: $secondaryCol;
+    }
+    .half{
+        width: 337px;
+    }
+    .left{
+        margin-right: 14px;
+    }
+   }
       
 }

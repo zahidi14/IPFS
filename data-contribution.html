@@ -71,7 +71,10 @@
                 
                 <label for="classification">Classification</label>
                 <div class="inline">
-                    <input type="text" name="classification" id="classification" value="Class"> <input type="text" name="label" id="" placeholder="Enter class label"> <input class="numb" type="text" name="number" placeholder="Number of Points"> <i></i>
+                    <input type="text" name="classification" id="classification" value="Class" disabled class="short"> <input type="text" name="label" id="" placeholder="Enter class label" class="long"> <input  type="text" name="number" placeholder="Number of Points" class="medium"> <span class="box"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="#919191" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4.5v15m7.5-7.5h-15"/>
+                      </svg>
+                      </span>
                 </div>
                
                
@@ -84,75 +87,108 @@
 
                 <h2>Included Attributes</h2>
                 <div class="checkboxCont">
-                    <div class="checkbox">
-                        <label for="">X Positions</label>
-                        <input type="checkbox" name="" id="">
-                        <label for="">Y Positions</label>
-                        <input type="checkbox" name="" id="">
-                        <label for="">Z Positions</label>
-                        <input type="checkbox" name="" id="">
-                        <label for="">Intensity</label>
-                        <input type="checkbox" name="" id="">
-                        <label for="">Return Number</label>
-                        <input type="checkbox" name="" id="">
-                    </div>
-                    <div class="checkbox">
-                        <label for="">Number of Returns</label>
-                        <input type="checkbox" name="" id="">
-                        <label for="">Scan Direction Flag</label>
-                        <input type="checkbox" name="" id="">
-                        <label for="">Edge of Flight Line</label>
-                        <input type="checkbox" name="" id="">
-                        <label for="">Classification</label>
-                        <input type="checkbox" name="" id="">
-                        <label for="">Scan Angle Rank</label>
-                        <input type="checkbox" name="" id="">
-                    </div>
-                    <div class="checkbox">
-                        <label for="">User Data</label>
-                        <input type="checkbox" name="" id="">
-                        <label for="">Point Source ID</label>
-                        <input type="checkbox" name="" id="">
-                        <label for="">GPS Time</label>
-                        <input type="checkbox" name="" id="">
-                        <label for="">RGB</label>
-                        <input type="checkbox" name="" id="">
-                    </div>
+                    <ul class="checkbox">
+                        <li>
+                            <input type="checkbox" name="" id="">
+                            <label for="">X Positions</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Y Positions</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Z Positions</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Intensity</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Return Number</label>
+                        </li>
+                        
+                    </ul>
+                    <ul class="checkbox">
+                        <li>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Number of Returns</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Scan Direction Flag</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Edge of Flight Line</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Classification</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Scan Angle Rank</label>
+                        </li>
+                        
+                    </ul>
+                    <ul class="checkbox">
+                        <li>
+                            <input type="checkbox" name="" id="">
+                            <label for="">User Data</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Point Source ID</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="">
+                            <label for="">GPS Time</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="">
+                            <label for="">RGB</label>
+                        </li>    
+                    </ul>
                 </div>
                <h2>Minimum & Maximum Attributes(min, max)</h2>
                <div class="formGrid">
                 <div class="left">
                     <label for="">XYZ Position</label>
-                    <input type="text" name="" id="">
+                    <input type="text" name="" id="" class="half">
                     <label for="">Return Number</label>
-                    <input type="text" name="" id="">
+                    <input type="text" name="" id="" class="half">
                     <label for="">Scan Direction Flag</label>
-                    <input type="text" name="" id="">
+                    <input type="text" name="" id="" class="half">
                     <label for="">Classification</label>
-                    <input type="text" name="" id="">
+                    <input type="text" name="" id="" class="half">
                     <label for="">User Data</label>
-                    <input type="text" name="" id="">
+                    <input type="text" name="" id="" class="half">
                     <label for="">GPS Time</label>
-                    <input type="text" name="" id="">
+                    <input type="text" name="" id="" class="half">
                 </div>
                 <div class="right">
                     <label for="">Intensity</label>
-                    <input type="text" name="" id="">
+                    <input type="text" name="" id="" class="half">
                     <label for="">Number of Returns</label>
-                    <input type="text" name="" id="">
+                    <input type="text" name="" id="" class="half">
                     <label for="">Edge of Flight Line</label>
-                    <input type="text" name="" id="">
+                    <input type="text" name="" id="" class="half">
                     <label for="">Scan Angle Rank</label>
-                    <input type="text" name="" id="">
+                    <input type="text" name="" id="" class="half">
                     <label for="">Point Source ID</label>
-                    <input type="text" name="" id="">
+                    <input type="text" name="" id="" class="half">
                     <label for="">RGB Colors</label>
-                    <input type="text" name="" id="">
+                    <input type="text" name="" id="" class="half">
                 </div>
                </div>
 
                <label for="dataPeriod">Data Collection Period</label>
-               <input type="date" name="" id=""> <input type="date" name="" id="">
+               <div class="inline">
+                <input type="date" name="" id="" class="date"> <span>to</span>  <input type="date" name="" id="" class="date">
+               </div>
+               
 
                <label for="publicationDate">Data Publication Date</label>
                <input type="date" name="" id="">
