@@ -30,7 +30,7 @@ input{
 
 
 
-.grid{
+
     .sidebar{
         width: 327px;
         height: 100%;
@@ -92,7 +92,7 @@ input{
             text-underline-offset: 12px;
         }
     }
-}
+
 
 // ### Open Data Library Page ###
 
@@ -144,5 +144,69 @@ input{
 
 form{
     margin-top: 50px;
-    display: block;
+    input,label{
+        display: block;
+        
+    }
+    label{
+        margin-top: 23px;
+    }
+    input{
+        width: 513px;
+        height: 37px;
+        margin-top: 10px;
+       
+    }
+    .large{
+        height: 154px;
+    }
+    .radioGroup{
+        float: left;
+        margin: 0 5px 0 0;
+        width: 100px;
+        height: 40px;
+        position: relative;
+        
+        label, input {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+      input[type="radio"] {
+        opacity: 0.011;
+        z-index: 100;
+      }
+      input[type="radio"]:checked + label {
+        background: #20b8be;
+        border-radius: 4px;
+      }
+      label {
+        cursor: pointer;
+        z-index: 90;
+        line-height: 1.8em;
+      }
+      
+    }
+      
+      .button 
+      
+      .button input[type="radio"] {
+        opacity: 0.011;
+        z-index: 100;
+      }
+      
+      .button input[type="radio"]:checked + label {
+        background: #20b8be;
+        border-radius: 4px;
+      }
+      
+      .button label {
+        cursor: pointer;
+        z-index: 90;
+        line-height: 1.8em;
+      }
+      
 }

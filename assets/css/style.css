@@ -20,7 +20,7 @@ input {
   padding: 15px;
 }
 
-.grid .sidebar {
+.sidebar {
   width: 327px;
   height: 100%;
   position: fixed;
@@ -28,20 +28,20 @@ input {
   text-align: center;
   box-shadow: -2px 4px 15px -3px rgba(0, 0, 0, 0.25);
 }
-.grid .sidebar .logo img {
+.sidebar .logo img {
   width: 40px;
   height: 40px;
   margin-bottom: 9px;
 }
-.grid .sidebar .logo h1 {
+.sidebar .logo h1 {
   color: #4A9EA1;
 }
-.grid .sidebar ul {
+.sidebar ul {
   position: relative;
   top: 58px;
   list-style: none;
 }
-.grid .sidebar ul li {
+.sidebar ul li {
   width: 296px;
   height: 54px;
   color: #313131;
@@ -50,22 +50,23 @@ input {
   border-radius: 3px;
   padding-left: 54px;
 }
-.grid .sidebar ul li a {
+.sidebar ul li a {
   text-decoration: none;
   color: #313131;
   padding: 17px auto;
   margin-left: 10px;
 }
-.grid .sidebar ul :hover > svg *,
-.grid .sidebar ul :hover {
+.sidebar ul :hover > svg *,
+.sidebar ul :hover {
   background-color: #4A9EA1;
   stroke: white;
 }
-.grid .sidebar ul :hover > svg * a,
-.grid .sidebar ul :hover a {
+.sidebar ul :hover > svg * a,
+.sidebar ul :hover a {
   color: white;
 }
-.grid .container {
+
+.container {
   margin-left: 327px;
   padding: 152px 70px 70px;
   width: auto;
@@ -73,7 +74,7 @@ input {
   overflow: auto;
   z-index: 1;
 }
-.grid .container h1 {
+.container h1 {
   -webkit-text-decoration: underline 3px #4A9EA1;
           text-decoration: underline 3px #4A9EA1;
   text-underline-offset: 12px;
@@ -123,5 +124,59 @@ input {
 
 form {
   margin-top: 50px;
+}
+form input, form label {
   display: block;
+}
+form label {
+  margin-top: 23px;
+}
+form input {
+  width: 513px;
+  height: 37px;
+  margin-top: 10px;
+}
+form .large {
+  height: 154px;
+}
+form .radioGroup {
+  float: left;
+  margin: 0 5px 0 0;
+  width: 100px;
+  height: 40px;
+  position: relative;
+}
+form .radioGroup label, form .radioGroup input {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+form .radioGroup input[type=radio] {
+  opacity: 0.011;
+  z-index: 100;
+}
+form .radioGroup input[type=radio]:checked + label {
+  background: #20b8be;
+  border-radius: 4px;
+}
+form .radioGroup label {
+  cursor: pointer;
+  z-index: 90;
+  line-height: 1.8em;
+}
+form .button .button input[type=radio] {
+  opacity: 0.011;
+  z-index: 100;
+}
+form .button input[type=radio]:checked + label {
+  background: #20b8be;
+  border-radius: 4px;
+}
+form .button label {
+  cursor: pointer;
+  z-index: 90;
+  line-height: 1.8em;
 }/*# sourceMappingURL=style.css.map */

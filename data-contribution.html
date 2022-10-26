@@ -44,13 +44,21 @@
                 <input type="text" name="" id="dataName">
                 
                 <label for="dataCid">DataCID</label>
-                <input type="text" name="dataCid" id="dataCid">
+                <input type="text" name="dataCid" id="dataCid" placeholder="CID of your data on Pinata">
                 
                 <label for="overview">Overview</label>
-                <input type="text" name="overview" id="overview">
+                <input type="text" name="overview" id="overview" class="large">
 
                 <label for="dataFormat">Data Format</label>
-                <input type="radio" name="dataFormat" id="dataFormat">
+                <div class="radioGroup">
+                    <input type="radio" id="las" name="las" />
+                    <label class="" for="las">LAS</label>
+                </div>
+                <div class="radioGroup">
+                    <input type="radio" id="laz" name="laz" />
+                    <label class="" for="laz">LAZ</label>
+                </div>
+                <br>
 
                 <label for="totalNumber">Total Number of Points</label>
                 <input type="text" name="totalNumber" id="totalNumber">
@@ -60,9 +68,13 @@
 
                 <label for="pointDensity">Point Density</label>
                 <input type="text" name="pointDensity" id="pointDensity">
-
+                
                 <label for="classification">Classification</label>
-                <input type="text" name="classification" id="classification" value="Class"> <input type="text" name="label" id="" placeholder="Enter class label"> <input class="numb" type="text" name="number" placeholder="Number of Points"> <i></i>
+                <div class="inline">
+                    <input type="text" name="classification" id="classification" value="Class"> <input type="text" name="label" id="" placeholder="Enter class label"> <input class="numb" type="text" name="number" placeholder="Number of Points"> <i></i>
+                </div>
+               
+               
                 
                 <label for="xCoordinate">Horizontal Coordinate System</label>
                 <input type="text" name="xCoordinate" id="xCoordinate">
