@@ -100,7 +100,13 @@ input{
                 }
                 
             }:hover > svg *,
-            :hover{
+            :hover {
+                background-color: $primaryCol;
+                stroke: white;
+                a{
+                    color: white;
+                }
+            }.active > svg *, .active{
                 background-color: $primaryCol;
                 stroke: white;
                 a{
@@ -175,6 +181,31 @@ input{
 
 
 // ### Data Contribution Page ###
+.checkboxCont{
+    display: flex;
+    label{
+        color: $secondaryCol;
+    }
+    .checkbox{
+        margin-top: 17px;
+        display: block;
+        list-style: none;
+        li{
+            margin-top: 10px;
+            margin-right: 48px;
+        }
+        input[type=checkbox]{
+            width:19px;
+            height: 19px;
+           
+        }
+        input, label{
+            display: inline-block;
+            margin-top: 0px;
+        }
+       
+    }
+   }
 
 form{
     .inline{
@@ -265,31 +296,7 @@ form{
         margin-top: 25px;
         text-decoration: underline ;
     }
-   .checkboxCont{
-    display: flex;
-    label{
-        color: $secondaryCol;
-    }
-    .checkbox{
-        margin-top: 17px;
-        display: block;
-        list-style: none;
-        li{
-            margin-top: 10px;
-            margin-right: 48px;
-        }
-        input[type=checkbox]{
-            width:19px;
-            height: 19px;
-           
-        }
-        input, label{
-            display: inline-block;
-            margin-top: 0px;
-        }
-       
-    }
-   }
+   
 
    .formGrid{
     display: flex;
@@ -327,9 +334,111 @@ form{
 
 // ### Data Individual Manager ###
 
-.top{
-    p{
-        margin-top: 11px;
-        color: $secondaryCol;
+.individual{
+    .top{
+        p{
+            margin-top: 11px;
+            color: $secondaryCol;
+        }
+        h1{
+            text-decoration: none;
+        }
+        
     }
+    h2{
+        text-decoration: underline;
+        font-weight: 100;
+        font-size: 16px;
+        margin: 11px 0;
+    }
+    .data{
+        margin-top: 28px;
+        margin-right: 209px;
+        p{
+            color: $secondaryCol;
+            margin-top: 4px;
+            margin-bottom: 22px;
+            text-align: justify ;
+            span{
+                color: #000;
+            }
+        }
+        .list{
+            margin-top: 11px;
+            color: $secondaryCol;
+            padding-left:15px ;
+            h2{
+                color: #000;
+               
+            }
+            ul{
+                margin: 11px 0 11px 0;
+               li{
+                margin-left: 25px;
+               }
+            }
+        }
+      
+    }
+    .details{
+        margin-top: 30px;
+        p{
+            margin-top: 11px;
+            span{
+                color: $secondaryCol;
+            }
+            
+        }
+        ul{
+            list-style: none;
+            li{
+                padding: 11px 0 0 11px;
+                color: $secondaryCol;
+            }
+            
+        }
+    }
+    .attribute{
+        margin-top:15px;
+        padding: 15px 0;
+    }
+    .minMaxAttr{
+        margin-bottom: 32px;
+        p{
+            margin-top: 10px;
+            color: $secondaryCol;
+        }
+    }
+    .down{
+        margin: 16px 0;
+    }
+    .fileBox{
+        
+        border: solid 1px $border;
+        border-radius: 3px;
+        display: flex;
+        padding: 20px 50px;
+        align-items: center;
+        background-image: url(/assets/images/file.svg);
+        background-repeat: no-repeat;
+        color: $secondaryCol;
+        &.short{
+            width: 287px;
+            height: 59px;
+            background-position: 5% 50%;
+        }
+        &.long{
+            width: 586px;
+            height: 59px;
+            background-position: 3% 50%;
+        }
+    }
+    .additional{
+        color: $secondaryCol;
+        line-height: 2em;
+    }
+    .copy{
+        margin-top: 16px;
+    }
+    
 }

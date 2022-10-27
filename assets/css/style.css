@@ -95,6 +95,13 @@ input {
 .sidebar ul :hover a {
   color: white;
 }
+.sidebar ul .active > svg *, .sidebar ul .active {
+  background-color: #4A9EA1;
+  stroke: white;
+}
+.sidebar ul .active > svg * a, .sidebar ul .active a {
+  color: white;
+}
 
 .container {
   margin-left: 327px;
@@ -156,6 +163,30 @@ input {
   margin-top: 29px;
 }
 
+.checkboxCont {
+  display: flex;
+}
+.checkboxCont label {
+  color: #919191;
+}
+.checkboxCont .checkbox {
+  margin-top: 17px;
+  display: block;
+  list-style: none;
+}
+.checkboxCont .checkbox li {
+  margin-top: 10px;
+  margin-right: 48px;
+}
+.checkboxCont .checkbox input[type=checkbox] {
+  width: 19px;
+  height: 19px;
+}
+.checkboxCont .checkbox input, .checkboxCont .checkbox label {
+  display: inline-block;
+  margin-top: 0px;
+}
+
 form {
   margin-top: 50px;
 }
@@ -211,29 +242,6 @@ form h2 {
   margin-top: 25px;
   text-decoration: underline;
 }
-form .checkboxCont {
-  display: flex;
-}
-form .checkboxCont label {
-  color: #919191;
-}
-form .checkboxCont .checkbox {
-  margin-top: 17px;
-  display: block;
-  list-style: none;
-}
-form .checkboxCont .checkbox li {
-  margin-top: 10px;
-  margin-right: 48px;
-}
-form .checkboxCont .checkbox input[type=checkbox] {
-  width: 19px;
-  height: 19px;
-}
-form .checkboxCont .checkbox input, form .checkboxCont .checkbox label {
-  display: inline-block;
-  margin-top: 0px;
-}
 form .formGrid {
   display: flex;
 }
@@ -262,7 +270,100 @@ form .formGrid .left {
   margin-top: 47px;
 }
 
-.top p {
+.individual .top p {
   margin-top: 11px;
   color: #919191;
+}
+.individual .top h1 {
+  text-decoration: none;
+}
+.individual h2 {
+  text-decoration: underline;
+  font-weight: 100;
+  font-size: 16px;
+  margin: 11px 0;
+}
+.individual .data {
+  margin-top: 28px;
+  margin-right: 209px;
+}
+.individual .data p {
+  color: #919191;
+  margin-top: 4px;
+  margin-bottom: 22px;
+  text-align: justify;
+}
+.individual .data p span {
+  color: #000;
+}
+.individual .data .list {
+  margin-top: 11px;
+  color: #919191;
+  padding-left: 15px;
+}
+.individual .data .list h2 {
+  color: #000;
+}
+.individual .data .list ul {
+  margin: 11px 0 11px 0;
+}
+.individual .data .list ul li {
+  margin-left: 25px;
+}
+.individual .details {
+  margin-top: 30px;
+}
+.individual .details p {
+  margin-top: 11px;
+}
+.individual .details p span {
+  color: #919191;
+}
+.individual .details ul {
+  list-style: none;
+}
+.individual .details ul li {
+  padding: 11px 0 0 11px;
+  color: #919191;
+}
+.individual .attribute {
+  margin-top: 15px;
+  padding: 15px 0;
+}
+.individual .minMaxAttr {
+  margin-bottom: 32px;
+}
+.individual .minMaxAttr p {
+  margin-top: 10px;
+  color: #919191;
+}
+.individual .down {
+  margin: 16px 0;
+}
+.individual .fileBox {
+  border: solid 1px #E1E1E1;
+  border-radius: 3px;
+  display: flex;
+  padding: 20px 50px;
+  align-items: center;
+  background-image: url(/assets/images/file.svg);
+  background-repeat: no-repeat;
+  color: #919191;
+}
+.individual .fileBox.short {
+  width: 287px;
+  height: 59px;
+  background-position: 5% 50%;
+}
+.individual .fileBox.long {
+  width: 586px;
+  height: 59px;
+  background-position: 3% 50%;
+}
+.individual .additional {
+  color: #919191;
+  line-height: 2em;
+}
+.individual .copy {
+  margin-top: 16px;
 }/*# sourceMappingURL=style.css.map */
