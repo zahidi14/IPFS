@@ -4,8 +4,16 @@ $headCol: #313131;
 $border: #E1E1E1;
 
 
-
+@font-face {
+    font-family: 'Roobert TRIAL';
+    src: url(/assets/css/font/RoobertTRIAL-Regular.otf);
+}
+@font-face {
+    font-family: 'bold';
+    src: url(/assets/css/font/RoobertTRIAL-Bold.otf);
+}
 * {
+    font-family: 'Roobert TRIAL';
     font-size: 16px;
     margin: 0;
     padding: 0;
@@ -27,6 +35,26 @@ input{
     padding: 15px;
 }
 
+.hex{
+    width: 196px;
+    height: 47px;
+    border: solid 1px $border;
+    border-radius: 3px;
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.25);
+    position: absolute;
+    top: 64px;
+    right: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $secondaryCol;
+    img{
+        width: 23px;
+        height: 23px;
+        margin-right: 7px;
+    }
+}
+
 
 
 
@@ -39,7 +67,7 @@ input{
         text-align: center;
         box-shadow: -2px 4px 15px -3px rgba(0,0,0,0.25);
         .logo{
-           
+            
             img{
                 width: 40px;
                 height: 40px;
@@ -47,6 +75,7 @@ input{
             }
             h1{
                 color: $primaryCol;
+                font-family: 'bold';
             }
         }
         ul{
@@ -105,6 +134,9 @@ input{
         
         width: 391px;
         height: 41px;
+        background-image: url(/assets/images/search.svg);
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
     }
     .order{
         width: 211px;
@@ -112,6 +144,8 @@ input{
         background-color: white;
         border: 1px solid $border;
         color: $secondaryCol;
+        padding:10px 15px;
+        
     }
 }
 
@@ -270,4 +304,32 @@ form{
     }
    }
       
+}
+
+// ### Data Manager ###
+
+.grey{
+    color: $secondaryCol;
+    margin-top: 35px;
+    margin-bottom: 45px;
+}
+.submit{
+    width: 103px;
+    height: 38px;
+    background-color: $primaryCol;
+    color: white;
+    border-radius: 3px;
+    margin-top: 47px;
+}
+
+
+
+
+// ### Data Individual Manager ###
+
+.top{
+    p{
+        margin-top: 11px;
+        color: $secondaryCol;
+    }
 }

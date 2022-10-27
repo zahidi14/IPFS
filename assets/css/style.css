@@ -1,4 +1,13 @@
+@font-face {
+  font-family: "Roobert TRIAL";
+  src: url(/assets/css/font/RoobertTRIAL-Regular.otf);
+}
+@font-face {
+  font-family: "bold";
+  src: url(/assets/css/font/RoobertTRIAL-Bold.otf);
+}
 * {
+  font-family: "Roobert TRIAL";
   font-size: 16px;
   margin: 0;
   padding: 0;
@@ -20,6 +29,26 @@ input {
   padding: 15px;
 }
 
+.hex {
+  width: 196px;
+  height: 47px;
+  border: solid 1px #E1E1E1;
+  border-radius: 3px;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 64px;
+  right: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #919191;
+}
+.hex img {
+  width: 23px;
+  height: 23px;
+  margin-right: 7px;
+}
+
 .sidebar {
   width: 327px;
   height: 100%;
@@ -35,6 +64,7 @@ input {
 }
 .sidebar .logo h1 {
   color: #4A9EA1;
+  font-family: "bold";
 }
 .sidebar ul {
   position: relative;
@@ -89,6 +119,9 @@ input {
 .filter .search {
   width: 391px;
   height: 41px;
+  background-image: url(/assets/images/search.svg);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
 }
 .filter .order {
   width: 211px;
@@ -96,6 +129,7 @@ input {
   background-color: white;
   border: 1px solid #E1E1E1;
   color: #919191;
+  padding: 10px 15px;
 }
 
 .divBox {
@@ -211,4 +245,24 @@ form .formGrid .half {
 }
 form .formGrid .left {
   margin-right: 14px;
+}
+
+.grey {
+  color: #919191;
+  margin-top: 35px;
+  margin-bottom: 45px;
+}
+
+.submit {
+  width: 103px;
+  height: 38px;
+  background-color: #4A9EA1;
+  color: white;
+  border-radius: 3px;
+  margin-top: 47px;
+}
+
+.top p {
+  margin-top: 11px;
+  color: #919191;
 }/*# sourceMappingURL=style.css.map */
