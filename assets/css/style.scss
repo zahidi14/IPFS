@@ -28,7 +28,9 @@ h2{
     font-size: 18px;
     
 }
-
+p{
+    text-align: justify;
+}
 input{
     border: solid 1px $border;
     border-radius: 3px;
@@ -163,6 +165,7 @@ input{
     p{
         margin-top: 24px;
         color: $secondaryCol;
+        text-align: justify;
     }
     a{
         text-decoration: none;
@@ -176,6 +179,10 @@ input{
         border-radius: 5px;
         font-size: 14;
         margin-top: 29px;
+    }
+    .editBox{
+        display: flex;
+        justify-content: space-between;
     }
 }
 
@@ -208,41 +215,17 @@ input{
    }
 
 form{
-    .inline{
+    .box{
+        border: solid 1px $border;
+        border-radius: 3px;
+        width: 37px;
+        height: 37px;
         display: flex;
-        flex-flow: row wrap;
+        justify-content: center;
         align-items: center;
-        .date{
-            width: 186px;
-            color: $secondaryCol;
-            
-        }
-        .pub{
-            width: 405px;
-        }
-        span{
-            margin: 0 17px;
-        }
-        .short{
-            width: 128px;
-            height: 37px;
-        }
-        .medium{
-            width: 107px;
-        }
-        .long{
-            width: 207px;
-        }
-        .box{
-            border: solid 1px $border;
-            border-radius: 3px;
-            width: 37px;
-            height: 37px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    }
+        margin-top: 10px;
+        margin-left: 5px;}
+
     margin-top: 50px;
     input,label{
         display: block;
@@ -255,11 +238,75 @@ form{
         width: 513px;
         height: 37px;
         margin-top: 10px;
-       
+       margin-right: 4px;
+       &.date{
+        width: 186px;
+        color: $secondaryCol;
+        
+    }
+    &.pub{
+        width: 405px;
+    }
     }
     .large{
         height: 154px;
     }
+   
+    .inline{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        vertical-align:middle;
+        .cid{
+            width: 317px;
+    
+        }
+        .filename{
+            width: 194px;
+        }
+        span{
+            margin: 0 8px;
+        }
+        .short{
+            width: 128px;
+            height: 37px;
+        }
+        .medium{
+            width: 170px;
+        }
+        .long{
+            width: 207px;
+        }
+        .box{
+            border: solid 1px $border;
+            border-radius: 3px;
+            width: 37px;
+            height: 37px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            margin-left: 5px;
+
+        }
+    }
+
+    .dropdown{
+        width: 511px;
+        height: 37px;
+        margin-top: 10px;
+       margin-right: 4px;
+       padding: 2px;
+       border-radius: 3px;
+       background-color: white;
+       border: 1px solid $border;
+       color: $secondaryCol;
+    }
+   .longButt{
+    width: 159px;
+   }
+    
+   
     // .radioGroup{
     //     float: left;
     //     margin: 0 5px 0 0;
@@ -296,7 +343,11 @@ form{
         margin-top: 25px;
         text-decoration: underline ;
     }
-   
+   .provider{
+    label{
+        color: $secondaryCol;
+    }
+   }
 
    .formGrid{
     display: flex;
@@ -310,11 +361,26 @@ form{
         margin-right: 14px;
     }
    }
+
+   textarea{
+    width: 510px;
+    height: 166px;
+    box-sizing: border-box;
+    border: solid 1px $border;
+    border-radius: 3px;
+  
+  font-size: 16px;
+  resize: none;
+   }
       
 }
 
 // ### Data Manager ###
-
+.calendar{
+    svg{
+        stroke: $secondaryCol;
+    }
+}
 .grey{
     color: $secondaryCol;
     margin-top: 35px;
@@ -442,3 +508,7 @@ form{
     }
     
 }
+
+
+// ### Data Manager ###
+
